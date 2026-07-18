@@ -6,7 +6,7 @@ from fastapi.templating import Jinja2Templates
 from pymongo import MongoClient
 
 app = FastAPI()
-conn = MongoClient("mongodb+srv://db_user:db_user@database.nyahjtx.mongodb.net/notes")
+conn = MongoClient("add your own database connection string here")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 templates = Jinja2Templates(directory="templates")
